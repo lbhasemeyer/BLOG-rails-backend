@@ -1,6 +1,6 @@
 User.delete_all
-Post.delete_all
 Comment.delete_all
+Post.delete_all
 
 user1 = User.create!( first_name: Faker::Name.name, last_name: Faker::Name.name )
 user2 = User.create!( first_name: Faker::Name.name, last_name: Faker::Name.name )
