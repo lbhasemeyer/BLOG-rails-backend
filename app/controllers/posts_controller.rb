@@ -10,7 +10,7 @@ class PostsController < ApplicationController
       render json: @filtered
     else
       @posts = Post.all
-      render json: @posts, except: :comments
+      render json: @posts, except: [:comments, :body]
     end
   end
 
