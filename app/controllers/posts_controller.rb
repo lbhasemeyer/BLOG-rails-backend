@@ -48,7 +48,6 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-
     head :no_content
   end
 
